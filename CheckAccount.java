@@ -8,8 +8,16 @@ public class CheckAccount {
         this.balance = balance;
     }
 
-    public void deposit(double amt) {
+    public void deposit(double amt) throws Exception {
+
+        if (amt < 0) {
+
+            throw new Exception("Unable to deposit a negative value");
+
+        }
+
         this.balance += amt;
+
     }
 
     public void withdraw(double amt) throws InsufficientFundsException {

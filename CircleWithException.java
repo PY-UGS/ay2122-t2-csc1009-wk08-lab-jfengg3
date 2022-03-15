@@ -49,7 +49,7 @@ public class CircleWithException {
 
             Scanner s = new Scanner(System.in);
 
-            System.out.println("Enter a radiusL: ");
+            System.out.println("Enter a radius: ");
             double radius = s.nextDouble();
 
             circle = new CircleWithException(radius);
@@ -62,7 +62,7 @@ public class CircleWithException {
 
         } catch (Exception e) {
 
-            System.out.println(e);
+            System.out.println(e.getMessage());
 
         }
 
